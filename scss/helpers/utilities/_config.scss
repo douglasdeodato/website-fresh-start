@@ -1,0 +1,73 @@
+//*********************************************************************
+//   Author: @douglasdeodato
+//   Site: lovelycss.com
+//   Date : 09/06/2016
+//   Version: bower.json or package.json
+//*********************************************************************
+
+
+// Font Stacks
+
+$font-url-google        : 'http://fonts.googleapis.com/css?family=Tangerine:100,300,400,700,900';
+$font-family-root       : 'Tangerine', Helvetica, Arial, sans-serif, FontAwesome;
+$font-family-secondary  :  Helvetica, Arial, sans-serif;
+$font-family-blog       :  opensans, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight-light      : 300;
+$font-weight-medium     : 400;
+$font-weight-bold       : 700;
+
+// Base Colors
+
+$white : #fff;
+$black : #0b0b0b;
+$grey  : #797e83;
+
+// Text
+
+$font-size-root: 16px !default;
+$line-height-root:1.5rem;
+
+
+// Color Palette
+
+$color-palettes: (
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+
+// Bootstrap responsive variables
+$screen-xs-min: 320px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
+// Path to Assets
+
+$path--rel      : "../public/images";
+
+// Screen reader text
+
+.srt {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+// UI Colors
+
+$ui-colors: (
+    sidebar-close : $white,
+    lovelycss-default: $black
+);

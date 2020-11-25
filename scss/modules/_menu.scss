@@ -1,0 +1,21 @@
+
+//  *********************************************************************
+//  =page name
+//
+//  Author : @douglasdeodato
+//  Company: x
+//  Project: x
+//  Date   : 20/06/2016
+//  Version: package.json
+//  *********************************************************************/
+
+
+/* example: sprite menu */
+
+.home-enable {
+  @include sprite($menu-icon-home-enable);
+}
+
+.home-disable {
+  @include sprite($menu-icon-home-disable);
+}

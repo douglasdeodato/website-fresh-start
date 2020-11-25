@@ -1,0 +1,56 @@
+//  *********************************************************************
+//  =core/base
+//
+//  Author : @douglasdeodato
+//  Site   : lovelycss.com
+//  Date : 26/11/2015
+//  Version: bower.json or package.json
+//  *********************************************************************/
+
+
+//*********************************************************************
+//  Golden Rule:
+//  100% = 16px  browsers default
+//  21px ÷ 16px = 1.5em
+//  use helpers/mixins/rem-convert
+// *********************************************************************/
+
+html,
+body {
+  // scss-lint:disable ColorVariable,ColorKeyword,SpaceAfterComma
+  color: palette(black,dark);
+  font: $font-weight-medium $font-size-root/#{$line-height-root} $font-family-root;
+  height: 100%;
+  min-height: 100%;
+  padding-bottom: 20px;
+  padding-top: 50px;
+  width: 100%;
+}
+
+p {
+  @include rem-size(12px);
+  a {
+    text-decoration: none;
+  }
+  //&:hover {}
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  @include rem-size(38px);
+}
+
+h2 {
+  @include rem-size(24px);
+}
+
+h3 {
+  @include rem-size(16px);
+}
+
+h4 {
+  text-transform: uppercase;
+}

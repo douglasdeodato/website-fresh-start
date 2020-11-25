@@ -1,0 +1,21 @@
+//*********************************************************************
+//  =Functions
+//  Author: @douglasdeodato
+//  Site: lovelycss.com
+//  Date : 09/06/2016
+//  Version: bower.json or package.json
+// *********************************************************************/
+
+
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+@function palette($palette, $shade: 'base') {
+  $palette-map: map-get($color-palettes, $palette);
+  @if $palette-map == null {
+    @error "#{$palette} is not a valid palette name.";
+  }
+
+  @return map-get($palette-map, $shade);
+}

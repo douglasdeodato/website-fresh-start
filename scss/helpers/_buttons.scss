@@ -1,0 +1,47 @@
+//*********************************************************************
+//
+//
+//   Author: @douglasdeodato
+//   Site: lovelycss.com
+//   Date : 26/11/2015
+//   Version: bower.json or package.json
+// *********************************************************************
+
+.btn {
+  @include bg-colors($ui-colors);
+}
+
+[class^="btn-"] {
+  @extend %btn;
+}
+
+.button {
+  &-login {
+    @extend %button-login;
+     &:hover {
+        color: palette(black);
+        box-shadow: none;
+        left: -2px;
+        bottom: -2px;
+    }
+  }
+}
+
+
+
+
+.deodato {
+    @include c(current) {
+      background-color: palette(black);
+      i {
+        visibility: visible;
+      }
+      span {
+       color: $white;
+      }
+    }
+}
+// test above using BEM prints
+// .deodato.current {
+//   background-color: palette(black);
+// }
