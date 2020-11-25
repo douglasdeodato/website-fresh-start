@@ -8,7 +8,7 @@ module.exports = function(grunt) {
   var src;
   config.src = src = {
     sassMain: 'scss/main.scss',
-    distFolder: 'public/stylesheets/app.dist.css',
+    distFolder: 'public/stylesheets/app.min.css',
     devFolder: 'public/stylesheets/app.dev.css',
     libFolder: 'lib/**/*.js',
     sassFolder: 'scss/**/*.scss',

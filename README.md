@@ -45,3 +45,22 @@ we have 2 css files compiled by grunt sass:
 .dev.css  for development so you can see the line and the name of file for debug.
 
 .dist.css  for distribution when you finish your App.
+
+
+## Grunt tasks
+
+$ grunt (default)
+$ grunt watch
+$ grunt concat
+$ grunt handlebars
+$ grunt uglify
+$ grunt jasmine
+$ grunt jshint
+$ grunt htmlmin
+$ grunt imagemin
+$ grunt sprite
+$ grunt sass
+$ grunt sass:dev
+$ grunt sass:dist
+$ grunt jade
+$ grunt serve
