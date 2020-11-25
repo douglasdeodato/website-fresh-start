@@ -8,8 +8,8 @@ module.exports = function(grunt) {
   var src;
   config.src = src = {
     sassMain: 'scss/main.scss',
-    distFolder: 'public/stylesheets/lovelycss.dist.css',
-    devFolder: 'public/stylesheets/lovelycss.dev.css',
+    distFolder: 'public/stylesheets/app.dist.css',
+    devFolder: 'public/stylesheets/app.dev.css',
     libFolder: 'lib/**/*.js',
     sassFolder: 'scss/**/*.scss',
     spriteCssFolder: 'scss/helpers/_sprite.scss',
@@ -73,8 +73,8 @@ module.exports = function(grunt) {
   sass.dist = {
     options: {
       style: "compressed",
-      noCache: true,
-      sourcemap: 'none',
+      //noCache: true,
+      //sourceMap: "none",
       update: true
     },
     files: {
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
   sass.dev = {
     options: {
       style: "expanded",
-      lineNumber: true,
+      //lineNumber: true,
     },
     files: {
       "<%= src.devFolder %>": "<%= src.sassMain %>"
